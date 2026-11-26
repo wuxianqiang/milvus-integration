@@ -1,0 +1,27 @@
+[project]
+name = "semantic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "xiaoyunmeng", email = "m1508953835@163.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dashscope>=2.1.1",
+    "dotenv>=0.9.9",
+    "faiss-cpu==1.10.0",
+    "langchain>=1.5.2",
+    "langchain-agentsearch>=0.8.2",
+    "langchain-community>=0.4.2",
+    "langchain-milvus>=0.4.0",
+    "langchain-openai>=1.8.5",
+    "pypdf>=7.1.1",
+]
+
+[project.scripts]
+semantic = "semantic:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
